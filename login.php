@@ -7,6 +7,7 @@
     <title>Login</title>
 </head>
 <body>
+    <!-- uma div que se baseia unicamente em receber nome e senha do usuario para logar-->
     <div class="login-container">
         <h2>Login</h2>
         <form action='verifica_login.php' method="POST">
