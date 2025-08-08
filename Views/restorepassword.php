@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=initial-scale=1.0">
-    <link rel="stylesheet" href="entrada.css">
-    <title>Login</title>
-</head>
-<body>
-    <!-- uma div que se baseia unicamente em receber nome e senha do usuario para logar-->
-    <div class="senha-container" >
+<?php
+include "Templates/header.php"; ?>
+
+<?php
+include "Templates/navbar.php"; ?>
+
+
+  <div class="senha-container" >
         <div class="base-container">
 
             <h2>Esqueceu a senha?</h2>
@@ -22,5 +19,6 @@
             </form>
         </div>
     </div>
-</body>
-</html>
+
+<?php
+include "Templates/footer.php"; ?>

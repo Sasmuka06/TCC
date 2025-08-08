@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=initial-scale=1.0">
-    <link rel="stylesheet" href="entrada.css">
-    <title>Login</title>
-</head>
-<body>
-    <!-- uma div que se baseia unicamente em receber nome e senha do usuario para logar-->
-    <div class="login-container">
+<?php
+include "Templates/header.php"; ?>
+
+<?php
+include "Templates/navbar.php"; ?>
+
+<div class="login-container">
     <div class="base-container">
         <h2>Login</h2>
         <form action='verifica_login.php' method="POST">
@@ -22,5 +18,6 @@
         </form>
     </div>
     </div>
-</body>
-</html>
+
+    <?php
+include "Templates/footer.php"; ?>
