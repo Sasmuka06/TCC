@@ -1,3 +1,22 @@
+<style>
+.navbar .nav-link:hover,
+.navbar button:hover {
+  color: rgba(255, 255, 255, 0.75); 
+  background-color:rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+form.d-flex button.fa-solid:hover {
+  background-color:rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+</style>
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #638BBE;">
   <div class="container-fluid">
@@ -17,8 +36,8 @@
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Pesquisar">
-          <button class="fa-solid fa-plus fa-1x ma-2" type="submit" style="color: white; background: transparent; border: none; cursor: pointer;"></button>
-        <button class="fa-solid fa-magnifying-glass fa-lg ma-2" type="submit" style="color: white; background: transparent; border: none; cursor: pointer;"></button>
+          <button class="fa-solid fa-plus fa-1x " type="submit" style="color: white; background: transparent; border: none; cursor: pointer;"></button>
+        <button class="fa-solid fa-magnifying-glass fa-lg " type="submit" style="color: white; background: transparent; border: none; cursor: pointer;"></button>
       </form>
     </div>
   </div>

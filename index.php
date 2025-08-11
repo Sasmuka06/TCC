@@ -4,7 +4,8 @@ include "Templates/header.php"; ?>
 <?php
 include "Templates/navbar.php"; ?>
 
-
+<?php
+include "Templates/sidebar.php"; ?>
 
 
 
