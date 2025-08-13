@@ -8,6 +8,8 @@
   cursor: pointer;
 }
 
+
+
 form.d-flex button.fa-solid:hover {
   background-color:rgba(0, 0, 0, 0.2);
   color: white;
@@ -15,10 +17,9 @@ form.d-flex button.fa-solid:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
 }
-
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #638BBE;">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100" style="background-color: #638BBE;">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

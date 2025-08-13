@@ -1,12 +1,15 @@
+
 <style>
 .sidebar{
       width: 280px;
-      min-height: 100vh;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       padding: 1rem;
       background-color: #638BBE;
       color: white;
+      position: fixed;
+      overflow-y: auto;
     }
 
     .sidebar a,
@@ -58,11 +61,20 @@
   border-radius: 0.375rem; 
   transition: background-color 0.3s ease;
 }
+
+.content {
+  margin-left: 280px; 
+}
+
+.contentmain {
+  margin-left: 220px; 
+}
+
   </style>
 </head>
 <body>
 
-  <div class="sidebar">
+  <div class="sidebar fixed">
     <ul class="list-unstyled ps-0 sidebar-menu">
       <li class="mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
