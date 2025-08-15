@@ -1,32 +1,32 @@
 <style>
-    footer {
+  footer {
     word-wrap: break-word;
     overflow-wrap: break-word;
-}
-footer p, 
-footer li, 
-footer small {
+  }
+
+  footer p,
+  footer li,
+  footer small {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
-}
+  }
 
-footer a {
-    color: #f8f9fa; 
+  footer a {
+    color: #f8f9fa;
     text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease; 
-    padding: 2px 4px; 
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 2px 4px;
     border-radius: 4px;
-}
+  }
 
-footer a:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
-    color: #ddd; 
-}
-
+  footer a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ddd;
+  }
 </style>
 
- <ul class="list-unstyled ps-0 pe-0 sidebar-footer border-top pt-3 mt-3 contentmain"></ul>
+<ul class="list-unstyled ps-0 pe-0 sidebar-footer border-top pt-3 mt-3 contentmain"></ul>
 
 <footer class="contentmain" style="margin-left:270px; background:#343a40; color:white; padding:40px 20px;">
   <div class="container-fluid px-4">
@@ -36,8 +36,8 @@ footer a:hover {
       <div class="col-md-4 mb-4">
         <h5>XXXXXXXXXXXXXXXXXXX</h5>
         <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
+          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.</p>
       </div>
 
       <!-- Links úteis -->
@@ -86,9 +86,6 @@ footer a:hover {
   </div>
 </footer>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-
-
-</body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+< /body> 
+  </html>

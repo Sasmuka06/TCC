@@ -46,9 +46,9 @@ include "Templates/sidebar.php"; ?>
   </button>
 </div>
 
- <div class="container contentmain d-flex justify-content-center align-items-center vh-100">
+<div class="container contentmain d-flex justify-content-center align-items-center vh-100">
   <div class="row w-100" style="max-width: 900px;">
-    
+
     <!-- 📝 Formulário (à esquerda) -->
     <div class="col-md-6 d-flex align-items-center">
       <form class="p-4 p-md-5 bg-light rounded shadow w-100">
@@ -64,8 +64,7 @@ include "Templates/sidebar.php"; ?>
             placeholder="seuemail@gmail.com"
             required
             pattern="[a-z0-9._%+-]+@gmail\.com$"
-            title="Por favor, insira um e-mail Gmail válido"
-          />
+            title="Por favor, insira um e-mail Gmail válido" />
         </div>
 
         <div class="mb-4">
@@ -77,8 +76,7 @@ include "Templates/sidebar.php"; ?>
             name="password"
             placeholder="Sua senha"
             required
-            minlength="6"
-          />
+            minlength="6" />
         </div>
 
         <button type="submit" class="btn btn-primary w-100">Entrar</button>
