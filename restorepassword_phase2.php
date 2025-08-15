@@ -131,7 +131,7 @@ include "Templates/header.php"; ?>
   }
 
   h2 {
-    font-size: 2.7rem;
+    font-size: 1.7rem;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -178,36 +178,35 @@ include "Templates/header.php"; ?>
 
   <form class="p-4 p-md-5 bg-light shadow w-100 ">
     <h2 class="mb-4 ">
-      Login <img src="IMG/cat.gif" alt="Nyan Cat" style="width: 80px; vertical-align: middle;  filter: brightness(100%);"></h2>
-    <div class="mb-3">
-      <label for="email" class="form-label">E-mail</label>
-      <input
-        type="email"
-        class="form-control"
-        id="email"
-        name="email"
-        placeholder="Ex: youremail@gmail.com"
-        required
-        pattern="[a-z0-9._%+-]+@gmail\.com$"
-        title="Por favor, insira um e-mail Gmail válido" />
-    </div>
-
-    <div class="mb-4">
-      <label for="password" class="form-label">Password</label>
+      Restore Password </h2>
+   <div class="mb-4">
+      <label for="password" class="form-label">Enter your new password</label>
       <input
         type="password"
         class="form-control"
         id="password"
         name="password"
-        placeholder="Password"
+        placeholder="New password.."
+        required
+        minlength="6" />
+    </div>
+
+    <div class="mb-4">
+      <label for="password" class="form-label">Confirm your new password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="Confirm password.."
         required
         minlength="6" />
     </div>
     <div class="d-flex justify-content-between mb-4">
-      <a href="/TCC/TCC/restorepassword.php" class="text-decoration-none">Forgot Password?</a>
+      <a href="#" class="text-decoration-none">Problems to restore password? Contact-US!</a>
     </div>
 
-    <button type="submit" class="btn btn-primary w-100">Log In!</button>
+    <button type="submit" class="btn btn-primary w-100">Send!</button>
   </form>
   <Br>
 

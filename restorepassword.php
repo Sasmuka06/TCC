@@ -131,7 +131,7 @@ include "Templates/header.php"; ?>
   }
 
   h2 {
-    font-size: 2.7rem;
+    font-size: 1.7rem;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -178,9 +178,10 @@ include "Templates/header.php"; ?>
 
   <form class="p-4 p-md-5 bg-light shadow w-100 ">
     <h2 class="mb-4 ">
-      Login <img src="IMG/cat.gif" alt="Nyan Cat" style="width: 80px; vertical-align: middle;  filter: brightness(100%);"></h2>
+      Restore Password</h2>
     <div class="mb-3">
-      <label for="email" class="form-label">E-mail</label>
+      <label for="email" class="form-label">Enter your password recovery email</label>
+      <br>
       <input
         type="email"
         class="form-control"
@@ -193,21 +194,13 @@ include "Templates/header.php"; ?>
     </div>
 
     <div class="mb-4">
-      <label for="password" class="form-label">Password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="password"
-        name="password"
-        placeholder="Password"
-        required
-        minlength="6" />
-    </div>
-    <div class="d-flex justify-content-between mb-4">
-      <a href="/TCC/TCC/restorepassword.php" class="text-decoration-none">Forgot Password?</a>
+    <input type="hidden" id="recaptchaToken" name="recaptcha_token" />
     </div>
 
-    <button type="submit" class="btn btn-primary w-100">Log In!</button>
+<div class="d-flex justify-content-between mb-4">
+      <a href="#" class="text-decoration-none">Problems to restore password? Contact-US!</a>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Send</button>
   </form>
   <Br>
 
@@ -247,6 +240,23 @@ include "Templates/header.php"; ?>
     </div>
   </div>
 </div>
+
+
+<script>
+  const form = document.getElementById('restoreForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // evita o envio imediato
+
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LdrWKcrAAAAAGyflDT0OXGRhTqTnQ41dbsEtwdH', { action: 'restore_password' }).then(function(token) {
+        document.getElementById('recaptchaToken').value = token;
+        form.submit(); // agora envia o formulário
+      });
+    });
+  });
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LdrWKcrAAAAAGyflDT0OXGRhTqTnQ41dbsEtwdH"></script>
 
 <?php
 include "Templates/footer2.php"; ?>

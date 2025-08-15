@@ -9,10 +9,7 @@
     <script src="https://kit.fontawesome.com/5f670eb272.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
     <link rel="icon" href="IMG/favicon.png" type="image/png">
+    <script src="/TCC/sidebar.js"></script>
 </head>
 
 <body>
-
-</body>
-
-</html>
