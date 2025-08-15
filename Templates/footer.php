@@ -48,7 +48,7 @@
 
       <!-- Links úteis -->
       <div class="col-md-2 mb-4">
-        <h5 class="text-dark">Links Úteis</h5>
+        <h5 class="text-dark text-center">Links Úteis</h5>
         <ul class="list-unstyled text-center">
           <li><a href="#" class="text-dark text-center text-decoration-none">Sobre nós</a></li>
           <br>
