@@ -7,9 +7,8 @@
     <title>Apeaqui!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5f670eb272.js" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <link rel="icon" href="IMG/favicon.png" type="image/png">
-    <script src="/TCC/sidebar.js"></script>
 </head>
 
 <body>

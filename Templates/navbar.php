@@ -1,4 +1,9 @@
 <style>
+  body{
+     height: 100%;
+    margin: 0;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0, 0, 0, 0.2)), url('IMG/text.jpg');
+  }
   .navbar .nav-link:hover,
   .navbar button:hover {
     color: rgba(255, 255, 255, 0.75);
@@ -38,6 +43,7 @@
     position: relative;
     z-index: 2;
   }
+
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark w-100" style="background-color: #638BBE;">
@@ -70,3 +76,5 @@
     </div>
   </div>
 </nav>
+
+  

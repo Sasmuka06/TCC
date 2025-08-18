@@ -66,6 +66,7 @@
 
   .content {
     margin-left: 240px;
+     z-index: 10;
   }
 
   .contentmain {

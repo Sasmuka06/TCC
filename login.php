@@ -137,6 +137,7 @@ include "Templates/header.php"; ?>
     text-transform: uppercase;
     color: red;
     animation: spectrumColors 8s infinite;
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.21);
   }
 
   @keyframes spectrumColors {
@@ -172,13 +173,15 @@ include "Templates/header.php"; ?>
       color: red;
     }
   }
+
+  
 </style>
 
 <div class="split left">
 
   <form class="p-4 p-md-5 bg-light shadow w-100 ">
     <h2 class="mb-4 ">
-      Login <img src="IMG/cat.gif" alt="Nyan Cat" style="width: 80px; vertical-align: middle;  filter: brightness(100%);"></h2>
+      Login <img src="IMG/cat.gif" alt="Nyan Cat" style="width: 80px; vertical-align: middle;  filter: brightness(100%);" class="nyancat"></h2>
     <div class="mb-3">
       <label for="email" class="form-label">E-mail</label>
       <input

@@ -10,7 +10,7 @@ include "Templates/sidebar.php"; ?>
 <br>
 <?php
 include "founders.php"; ?>
-<br>
+
 
 <?php
 include "Templates/footer.php"; ?>

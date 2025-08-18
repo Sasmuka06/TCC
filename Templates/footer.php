@@ -31,7 +31,7 @@
   }
 </style>
 
-<ul class="list-unstyled ps-0 pe-0 sidebar-footer border-top pt-3 mt-3 contentmain"></ul>
+
 
 <footer class="contentmain" style="margin-left:240px; background:rgb(255, 255, 255); color:white; padding:40px 20px;">
   <div class="container-fluid px-4">
