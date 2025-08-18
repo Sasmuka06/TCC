@@ -153,7 +153,7 @@
           <br>
           <li><a href="#" class="link-white rounded">Perfil</a></li>
           <br>
-          <li><a href="#" class="link-white rounded">Sair</a></li>
+          <li><a href="login.php" class="link-white rounded">Sair</a></li>
         </ul>
       </div>
     </li>

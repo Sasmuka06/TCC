@@ -37,7 +37,6 @@
   <div class="container-fluid px-4">
     <div class="row">
 
-      <!-- Sobre a empresa -->
       <div class="col-md-4 mb-4">
         <h5 class="text-dark text-center">Sobre Nós</h5>
         <p class="text-dark text-center">Somos uma empresa comprometida com a inovação,
@@ -46,7 +45,6 @@
           satisfação de nossos clientes.</p>
       </div>
 
-      <!-- Links úteis -->
       <div class="col-md-2 mb-4">
         <h5 class="text-dark text-center">Links Úteis</h5>
         <ul class="list-unstyled text-center">
@@ -60,7 +58,6 @@
         </ul>
       </div>
 
-      <!-- Contato -->
       <div class="col-md-3 mb-4">
         <h5 class="text-dark text-center">Contato</h5>
         <ul class="list-unstyled text-dark text-center">
