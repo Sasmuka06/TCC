@@ -1,7 +1,7 @@
 <style>
     .content {
         margin-left: 240px;
-        gap: 120px;
+        gap: 100px;
     }
 
     img {
@@ -26,7 +26,8 @@
     .classh5{
     text-align: center;
     text-transform: uppercase;
- 
+ color: red;
+    animation: spectrumColors 8s infinite;
     }
 
 .rounded-circle {
@@ -39,14 +40,6 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hovered:hover{
-
- text-align: center;
-    text-transform: uppercase;
-    color: red;
-    animation: spectrumColors 8s infinite;
-
-}
 .rounded-circle:hover {
   transform: scale(1.1);  
   box-shadow: 0px 8px 20px rgba(0,0,0,0.5); 
@@ -87,30 +80,39 @@
 
   }
 
+.subtitle{
+    font-size: 1.5rem;
+}
 </style>
 
-<h2 class = "classh2 content">Founders!</h2>
+<h2 class = "classh2 content ">Founders!</h2>
+<p class="content text-center subtitle">These are the people responsible for developing the project.</p>
 <BR><BR>
 
 <div class="d-flex justify-content-center content">
-    <div class="text-center hovered">
+    <div class="text-center ">
         <img src="IMG/me.jpg" class="rounded-circle " alt="img1" >
         <h5 class="mt-4 metext classh5">Pedro Lenhares</h5>
+        <p class="metext subtitle">Full Stack Developer</p>
     </div>
-    <div class="text-center  hovered">
+    <div class="text-center  ">
         <img src="IMG/Nicolas.png" class="rounded-circle" alt="img2">
         <h5 class="mt-4 classh5">Nicolas Augusto</h5>
-    </div>
-    <div class="text-center hovered">
+        <p class="subtitle">Back-End Developer</p>
+    </div> 
+    <div class="text-center ">
         <img src="IMG/Matheus.png" class="rounded-circle" alt="img3">
         <h5 class="mt-4 classh5">Matheus Mendonca</h5>
+         <p class="subtitle">Text Proofreader</p>
     </div>
-    <div class="text-center hovered">
+    <div class="text-center ">
         <img src="IMG/Samuel.png" class="rounded-circle" alt="img4">
         <h5 class="mt-4 classh5">Samuel Santos</h5>
+         <p class="subtitle">Front-End Developer</p>
     </div>
-    <div class="text-center hovered">
+    <div class="text-center ">
         <img src="IMG/Manoela.png" class="rounded-circle" alt="img5">
         <h5 class="mt-4 classh5">Manuuuuuuu! :3</h5>
+        <p class="subtitle">Project designer</p>
     </div>
 </div>
