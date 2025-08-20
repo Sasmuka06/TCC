@@ -131,53 +131,43 @@ include "Templates/header.php"; ?>
   }
 
   h2 {
-    font-size: 1.7rem;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: red;
-    animation: spectrumColors 8s infinite;
+     font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #2B3A67, #638BBE, #4ecdc4, #45b7d1, #96ceb4);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientShift 8s ease-in-out infinite;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.57));
+            align-items : center;
   }
+   @keyframes gradientShift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
 
-  @keyframes spectrumColors {
-    0% {
-      color: red;
-    }
-
-    14% {
-      color: orange;
-    }
-
-    28% {
-      color: yellow;
-    }
-
-    42% {
-      color: green;
-    }
-
-    57% {
-      color: blue;
-    }
-
-    71% {
-      color: indigo;
-    }
-
-    85% {
-      color: violet;
-    }
-
-    100% {
-      color: red;
-    }
-  }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
 </style>
 
 <div class="split left">
 
   <form class="p-4 p-md-5 bg-light shadow w-100 ">
-    <h2 class="mb-4 ">
+    <h2 class="mb-4 text-center">
       Restore Password </h2>
    <div class="mb-4">
       <label for="password" class="form-label">Enter your new password</label>
