@@ -14,7 +14,7 @@
             max-width: 1400px;
             margin: 0 auto;
             padding: 0 2rem;
-            margin-left: 360px;
+            margin-left: 370px;
         }
 
         .founders-header {
@@ -25,12 +25,12 @@
         .founders-title {
             font-size: 4rem;
             font-weight: 700;
-            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+            background: linear-gradient(45deg, #2B3A67, #638BBE, #4ecdc4, #45b7d1, #96ceb4);
             background-size: 300% 300%;
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: gradientShift 4s ease-in-out infinite;
+            animation: gradientShift 8s ease-in-out infinite;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 1rem;
@@ -126,11 +126,11 @@
             font-style: italic;
         }
 
-        .founder-card:nth-child(1) .founder-image { border-color: #ff6b6b; }
-        .founder-card:nth-child(2) .founder-image { border-color: #4ecdc4; }
-        .founder-card:nth-child(3) .founder-image { border-color: #45b7d1; }
-        .founder-card:nth-child(4) .founder-image { border-color: #96ceb4; }
-        .founder-card:nth-child(5) .founder-image { border-color: #feca57; }
+        .founder-card:nth-child(1) .founder-image { border-color: #2B3A67; }
+        .founder-card:nth-child(2) .founder-image { border-color: #638BBE; }
+        .founder-card:nth-child(3) .founder-image { border-color: #4ecdc4; }
+        .founder-card:nth-child(4) .founder-image { border-color: #45b7d1; }
+        .founder-card:nth-child(5) .founder-image { border-color: #96ceb4; }
 
         @keyframes gradientShift {
             0%, 100% {
