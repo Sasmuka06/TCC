@@ -126,9 +126,9 @@
             font-style: italic;
         }
 
-        .founder-card:nth-child(1) .founder-image { border-color: #2B3A67; }
+        .founder-card:nth-child(3) .founder-image { border-color: #2B3A67; }
         .founder-card:nth-child(2) .founder-image { border-color: #638BBE; }
-        .founder-card:nth-child(3) .founder-image { border-color: #4ecdc4; }
+        .founder-card:nth-child(1) .founder-image { border-color: #4ecdc4; }
         .founder-card:nth-child(4) .founder-image { border-color: #45b7d1; }
         .founder-card:nth-child(5) .founder-image { border-color: #96ceb4; }
 
