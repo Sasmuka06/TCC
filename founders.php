@@ -224,7 +224,7 @@
     <div class="founders-container ">
         <div class="founders-header ">
             <h2 class="founders-title ">Founders</h2>
-            <p class="founders-subtitle ">Conheça as mentes brilhantes por trás do projeto que está transformando o futuro</p>
+            <p class="founders-subtitle ">Here are the founding members of the project</p>
         </div>
 
         <div class="founders-grid ">
@@ -235,7 +235,7 @@
             </div>
 
             <div class="founder-card">
-              <img src="IMG/Nicolas.png" class="founder-image" alt="Pedro Lenhares">
+              <img src="IMG/Nicolas.png" class="founder-image" alt="Nicolas Augusto">
                 <h5 class="founder-name">Nicolas Augusto</h5>
                 <p class="founder-role">back-end developer</p>
             </div>
