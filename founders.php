@@ -38,6 +38,7 @@
     font-size: 1.5rem;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-weight: 300;
+    color:black;
   }
 
   .rounded-circle {

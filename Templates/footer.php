@@ -33,7 +33,7 @@
 
 
 
-<footer class="contentmain" style="margin-left:240px; background:rgb(255, 255, 255); color:white; padding:40px 20px;">
+<footer class="contentmain" style="margin-left:240px; background:rgba(255, 255, 255, 0.6); color:white; padding:40px 20px;">
   <div class="container-fluid px-4">
     <div class="row">
 

@@ -6,12 +6,15 @@
     flex-direction: column;
     padding: 1rem;
     background-color: #638BBE;
-    color: white;
+    color: #E0E6ED;
     overflow-y: auto;
     top: 0;
     position: fixed;
     transition: left 0.3s ease;
     border-radius: 0.7px;
+    background: linear-gradient(180deg, #2B3A67, #638BBE);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 
   .sidebar a,
@@ -23,6 +26,7 @@
   .sidebar a:hover {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: underline;
+     background-color: rgba(255, 255, 255, 0.1);
   }
 
   .sidebar-menu {

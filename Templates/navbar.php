@@ -42,7 +42,36 @@
   nav {
     position: relative;
     z-index: 2;
+    background: linear-gradient(90deg, #2B3A67, #638BBE);
+     padding: 10px 20px;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+     
   }
+
+  .navbar input[type="search"] {
+  background-color: rgba(255, 255, 255, 0.53); 
+  color: #000000ff;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+}
+
+.navbar input[type="search"]::placeholder {
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.navbar input[type="search"]:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+   
+}
+
+.searchbutton{
+  box-shadow: 0 0 5px rgba(10, 10, 10, 0.4);
+  border-radius: 15px;
+  
+}
 
 </style>
 
@@ -63,7 +92,7 @@
         </li>
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Pesquisar">
+        <input class="form-control me-2 searchbutton" type="search" placeholder="Search" aria-label="Pesquisar">
         <button type="submit"
           style="color: white; background: transparent; border: none; cursor: pointer;  display: flex; align-items: center;
            gap: 4px; padding: 4px 8px;"
