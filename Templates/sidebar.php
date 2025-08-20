@@ -15,6 +15,7 @@
     background: linear-gradient(180deg, #2B3A67, #638BBE);
       backdrop-filter: blur(10px);
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 10;
   }
 
   .sidebar a,

@@ -41,7 +41,7 @@
 
   nav {
     position: relative;
-    z-index: 2;
+    z-index: 12;
     background: linear-gradient(90deg, #2B3A67, #638BBE);
      padding: 10px 20px;
      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
