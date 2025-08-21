@@ -214,7 +214,7 @@
           <br>
           <li><a href="#" class="link-white rounded">Configurações</a></li>
           <br>
-          <li><a href="#" class="link-white rounded">Perfil</a></li>
+          <li><a href="/TCC/Views/perfil.php" class="link-white rounded">Perfil</a></li>
           <br>
           <li><a href="login.php" class="link-white rounded">Sair</a></li>
         </ul>
