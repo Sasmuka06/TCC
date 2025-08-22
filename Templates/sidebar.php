@@ -13,12 +13,35 @@
     transition: left 0.3s ease;
     border-radius: 0.7px;
     background: linear-gradient(180deg, #2B3A67, #638BBE);
-      backdrop-filter: blur(10px);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-      z-index: 10;
-       
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.82) transparent;
+     -ms-overflow-style: none;
   }
+.sidebar::-webkit-scrollbar {
   
+  width: 12px; 
+  height: 12px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+  background: #888;
+  border-radius: 6px;
+  min-height: 20px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgba(240, 238, 238, 0.92);
+  border-radius: 4px;
+  border: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(155, 155, 155, 0.8);
+}
 
   .sidebar a,
   .sidebar button.btn-toggle {
@@ -29,7 +52,7 @@
   .sidebar a:hover {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: underline;
-     background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   .sidebar-menu {
@@ -73,7 +96,7 @@
 
   .content {
     margin-left: 240px;
-     z-index: 10;
+    z-index: 10;
   }
 
   .contentmain {
@@ -81,59 +104,58 @@
   }
 
   .sidebar::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.8), transparent),
-                radial-gradient(3px 3px at 40px 70px, rgba(255,255,255,0.6), transparent),
-                radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.9), transparent),
-                radial-gradient(2px 2px at 130px 80px, rgba(255,255,255,0.7), transparent),
-                radial-gradient(3px 3px at 160px 30px, rgba(255,255,255,0.5), transparent),
-                radial-gradient(1px 1px at 200px 60px, rgba(255,255,255,0.8), transparent),
-                radial-gradient(2px 2px at 240px 90px, rgba(255,255,255,0.6), transparent),
-                radial-gradient(3px 3px at 60px 120px, rgba(255,255,255,0.7), transparent),
-                radial-gradient(1px 1px at 180px 150px, rgba(255,255,255,0.9), transparent),
-                radial-gradient(2px 2px at 120px 180px, rgba(255,255,255,0.5), transparent);
-            background-repeat: repeat;
-            background-size: 280px 300px;
-            animation: particlesMove 25s linear infinite;
-            pointer-events: none;
-        }
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.8), transparent),
+      radial-gradient(3px 3px at 40px 70px, rgba(255, 255, 255, 0.6), transparent),
+      radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.9), transparent),
+      radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.7), transparent),
+      radial-gradient(3px 3px at 160px 30px, rgba(255, 255, 255, 0.5), transparent),
+      radial-gradient(1px 1px at 200px 60px, rgba(255, 255, 255, 0.8), transparent),
+      radial-gradient(2px 2px at 240px 90px, rgba(255, 255, 255, 0.6), transparent),
+      radial-gradient(3px 3px at 60px 120px, rgba(255, 255, 255, 0.7), transparent),
+      radial-gradient(1px 1px at 180px 150px, rgba(255, 255, 255, 0.9), transparent),
+      radial-gradient(2px 2px at 120px 180px, rgba(255, 255, 255, 0.5), transparent);
+    background-repeat: repeat;
+    background-size: 280px 300px;
+    animation: particlesMove 25s linear infinite;
+    pointer-events: none;
+  }
 
-        .sidebar::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(1px 1px at 50px 50px, rgba(255,255,255,0.4), transparent),
-                radial-gradient(2px 2px at 100px 100px, rgba(255,255,255,0.6), transparent),
-                radial-gradient(1px 1px at 150px 50px, rgba(255,255,255,0.8), transparent),
-                radial-gradient(3px 3px at 200px 120px, rgba(255,255,255,0.5), transparent),
-                radial-gradient(1px 1px at 80px 180px, rgba(255,255,255,0.7), transparent),
-                radial-gradient(2px 2px at 220px 200px, rgba(255,255,255,0.6), transparent);
-            background-repeat: repeat;
-            background-size: 280px 400px;
-            animation: particlesMove 35s linear infinite reverse;
-            pointer-events: none;
-        }
+  .sidebar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+      radial-gradient(1px 1px at 50px 50px, rgba(255, 255, 255, 0.4), transparent),
+      radial-gradient(2px 2px at 100px 100px, rgba(255, 255, 255, 0.6), transparent),
+      radial-gradient(1px 1px at 150px 50px, rgba(255, 255, 255, 0.8), transparent),
+      radial-gradient(3px 3px at 200px 120px, rgba(255, 255, 255, 0.5), transparent),
+      radial-gradient(1px 1px at 80px 180px, rgba(255, 255, 255, 0.7), transparent),
+      radial-gradient(2px 2px at 220px 200px, rgba(255, 255, 255, 0.6), transparent);
+    background-repeat: repeat;
+    background-size: 280px 400px;
+    animation: particlesMove 35s linear infinite reverse;
+    pointer-events: none;
+  }
 
-        @keyframes particlesMove {
-            0% {
-                transform: translateY(0px);
-            }
-            100% {
-                transform: translateY(-300px);
-            }
-        }
-        
+  @keyframes particlesMove {
+    0% {
+      transform: translateY(0px);
+    }
 
+    100% {
+      transform: translateY(-300px);
+    }
+  }
 </style>
 
 <div class="sidebar fixed ">
