@@ -1,0 +1,9 @@
+.formadd {
+  max-width: 470;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.formbutton{
+  color: #638BBE;
+ background-color: #638BBE;
+}
