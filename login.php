@@ -78,22 +78,6 @@ include "Templates/header.php"; ?>
     max-width: 500px;
   }
 
-  .btn-primary {
-    background-color: #638BBE;
-    border-color: #638BBE;
-    font-size: 1.8rem;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    font-weight: 500;
-  }
-
-  .btn-primary:hover {
-    background-color: #4a6f9c;
-    border-color: #4a6f9c;
-    font-size: 1.8rem;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    font-weight: 500;
-  }
-
   .decorative-line {
     border: none;
     height: 3px;
@@ -107,18 +91,6 @@ include "Templates/header.php"; ?>
     filter: brightness(25%);
   }
 
-  form {
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  a {
-    color: #638BBE;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
 
   .carousel-caption h5 {
     font-size: 1.5rem;
@@ -132,74 +104,151 @@ include "Templates/header.php"; ?>
 
   h2 {
     font-size: 3rem;
-            font-weight: 700;
-            background: linear-gradient(45deg, #2B3A67, #638BBE, #4ecdc4, #45b7d1, #96ceb4);
-            background-size: 300% 300%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientShift 8s ease-in-out infinite;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.57));
-            align-items : center;
-  }
-   @keyframes gradientShift {
-            0%, 100% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-        }
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-  
+  }
+
+  @keyframes gradientShift {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+
+  }
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  .wrapper {
+    width: 520px;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: #cccccc;
+    border-radius: 60px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+
+  }
+
+  .wrapper h1 {
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    color: #638BBE;
+  }
+
+  .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    margin-bottom: 20px;
+
+  }
+
+  .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(49, 48, 48, 0.41);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .input-box input::placeholder {
+    color: black;
+  }
+
+  .wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    color: #638BBE;
+
+  }
+
+  .remember-forgot a :hover {
+    text-decoration: underline;
+  }
+
+  .wrapper .btn-login {
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: #638BBE;
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .wrapper label{
+    color:black;
+  }
 </style>
+
 
 <div class="split left">
 
-  <form class="p-4 p-md-5 bg-light shadow w-100 ">
-    <h2 class="mb-4 text-center">
-      Login <img src="IMG/cat.gif" alt="Nyan Cat" style="width: 80px; vertical-align: middle;  filter: brightness(100%);" class="nyancat"></h2>
-    <div class="mb-3">
-      <label for="email" class="form-label">E-mail</label>
-      <input
-        type="email"
-        class="form-control"
-        id="email"
-        name="email"
-        placeholder="Ex: youremail@gmail.com"
-        required
-        pattern="[a-z0-9._%+-]+@gmail\.com$"
-        title="Por favor, insira um e-mail Gmail válido" />
-    </div>
+  <div class="wrapper">
+    <form class="p-4 p-md-5  w-100 ">
+      <h1 class="mb-4 text-center"> LOGIN </h1>
+      <div class="mb-3 input-box">
+        <label for="email" class="form-label ">E-mail</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="Ex: youremail@gmail.com"
+          required
+          pattern="[a-z0-9._%+-]+@gmail\.com$"
+          title="Por favor, insira um e-mail Gmail válido" />
+      </div>
 
-    <div class="mb-4">
-      <label for="password" class="form-label">Password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="password"
-        name="password"
-        placeholder="Password"
-        required
-        minlength="6" />
-    </div>
-    <div class="d-flex justify-content-between mb-4">
-      <a href="/TCC/TCC/restorepassword.php" class="text-decoration-none">Forgot Password?</a>
-    </div>
-
-    <button type="submit" class="btn btn-primary w-100">Log In!</button>
-  </form>
+      <div class="mb-4 input-box">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+          minlength="6" />
+      </div>
+      <div class="d-flex justify-content-between mb-4 remember-forgot">
+        <a href="/TCC/TCC/restorepassword.php" class="text-decoration-none">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 btn-login">Login</button>
+    </form>
+  </div>
   <Br>
 
 

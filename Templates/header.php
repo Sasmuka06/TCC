@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5f670eb272.js" crossorigin="anonymous"></script>
     <link rel="icon" href="IMG/favicon.png" type="image/png">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 </head>
 
 <body>
