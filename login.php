@@ -152,7 +152,6 @@ include "Templates/header.php"; ?>
 
   .wrapper h1 {
     font-size: 42px;
-    font-family: 'Poppins', sans-serif;
     color: #638BBE;
   }
 
@@ -166,7 +165,7 @@ include "Templates/header.php"; ?>
 
   .input-box input {
     width: 100%;
-    height: 100%;
+    
     background: transparent;
     border: none;
     outline: none;
@@ -211,6 +210,11 @@ include "Templates/header.php"; ?>
   .wrapper label{
     color:black;
   }
+
+  a:hover{
+        text-decoration: underline;
+  }
+  
 </style>
 
 
@@ -231,7 +235,6 @@ include "Templates/header.php"; ?>
           pattern="[a-z0-9._%+-]+@gmail\.com$"
           title="Por favor, insira um e-mail Gmail válido" />
       </div>
-
       <div class="mb-4 input-box">
         <label for="password" class="form-label">Password</label>
         <input
@@ -243,6 +246,7 @@ include "Templates/header.php"; ?>
           required
           minlength="6" />
       </div>
+      <br>
       <div class="d-flex justify-content-between mb-4 remember-forgot">
         <a href="/TCC/TCC/restorepassword.php" class="text-decoration-none">Forgot Password?</a>
       </div>

@@ -1,5 +1,5 @@
 <style>
-  body {
+  body, html {
     height: 100%;
     overflow: auto;
     margin: 0;

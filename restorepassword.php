@@ -107,10 +107,6 @@ include "Templates/header.php"; ?>
     filter: brightness(25%);
   }
 
-  form {
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
 
   a {
     color: #638BBE;
@@ -130,68 +126,169 @@ include "Templates/header.php"; ?>
     opacity: 0.9;
   }
 
-  h2 {
-     font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(45deg, #2B3A67, #638BBE, #4ecdc4, #45b7d1, #96ceb4);
-            background-size: 300% 300%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientShift 8s ease-in-out infinite;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1rem;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.57));
-            align-items : center;
-  }
-   @keyframes gradientShift {
-            0%, 100% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-        }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #2B3A67, #638BBE, #4ecdc4, #45b7d1, #96ceb4);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 8s ease-in-out infinite;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+  @keyframes gradientShift {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .wrapper {
+    width: 520px;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: #cccccc;
+    border-radius: 60px;
+    padding: 30px 40px;
+    backdrop-filter: blur(10px);
+
+  }
+
+  .wrapper h1 {
+    font-size: 42px;
+    color: #638BBE;
+  }
+
+  .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    margin-bottom: 20px;
+
+  }
+
+  .input-box input {
+    width: 100%;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(49, 48, 48, 0.41);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .input-box input::placeholder {
+    color: black;
+  }
+
+  .wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    color: #638BBE;
+
+  }
+
+  .remember-forgot a :hover {
+    text-decoration: underline;
+  }
+
+  .wrapper .btn-login {
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    background: #638BBE;
+    border-radius: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+
+  .wrapper label {
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <div class="split left">
 
-  <form class="p-4 p-md-5 bg-light shadow w-100 ">
-    <h2 class="mb-4 text-center">
-      Restore Password</h2>
-    <div class="mb-3">
-      <label for="email" class="form-label">Enter your password recovery email</label>
+  <div class="wrapper">
+    <form class="p-4 p-md-5 ">
+      <h2 class="mb-4 text-center">
+        Restore Password</h2>
+      <div class="mb-3 input-box ">
+        <center><label for="email" class="form-label text-center">Enter your password recovery email</label></center>
+
+        <center><input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Ex: youremail@gmail.com"
+            required
+            pattern="[a-z0-9._%+-]+@gmail\.com$"
+            title="Por favor, insira um e-mail Gmail válido" />
+      </div>
+      </center>
+
+      <div class="mb-4">
+        <input type="hidden" id="recaptchaToken" name="recaptcha_token" />
+      </div>
       <br>
-      <input
-        type="email"
-        class="form-control"
-        id="email"
-        name="email"
-        placeholder="Ex: youremail@gmail.com"
-        required
-        pattern="[a-z0-9._%+-]+@gmail\.com$"
-        title="Por favor, insira um e-mail Gmail válido" />
-    </div>
-
-    <div class="mb-4">
-    <input type="hidden" id="recaptchaToken" name="recaptcha_token" />
-    </div>
-
-<div class="d-flex justify-content-between mb-4">
-      <a href="#" class="text-decoration-none">Problems to restore password? Contact-US!</a>
-    </div>
-    <button type="submit" class="btn btn-primary w-100">Send</button>
-  </form>
+      <div class="d-flex justify-content-between mb-4">
+        <a href="#" class="text-decoration-none">Problems to restore password? Contact-US!</a>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 btn-login">Send</button>
+    </form>
+  </div>
   <Br>
 
 
@@ -238,7 +335,9 @@ include "Templates/header.php"; ?>
     e.preventDefault(); // evita o envio imediato
 
     grecaptcha.ready(function() {
-      grecaptcha.execute('6LdrWKcrAAAAAGyflDT0OXGRhTqTnQ41dbsEtwdH', { action: 'restore_password' }).then(function(token) {
+      grecaptcha.execute('6LdrWKcrAAAAAGyflDT0OXGRhTqTnQ41dbsEtwdH', {
+        action: 'restore_password'
+      }).then(function(token) {
         document.getElementById('recaptchaToken').value = token;
         form.submit(); // agora envia o formulário
       });
