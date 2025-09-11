@@ -10,5 +10,4 @@
     <script src="https://kit.fontawesome.com/5f670eb272.js" crossorigin="anonymous"></script>
     <link rel="icon" href="IMG/favicon.png" type="image/png">
 </head>
-
 <body>

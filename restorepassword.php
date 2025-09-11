@@ -50,9 +50,11 @@ include "Templates/header.php"; ?>
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('IMG/text.jpg');
+   background:
+      linear-gradient(120deg, #f0f0f0 10%, transparent 10%, transparent 30%, #f0f0f0 30%, #f0f0f0 50%, transparent 50%, transparent 70%, #f0f0f0 70%, #f0f0f0 90%, transparent 90%),
+      linear-gradient(120deg, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0.03) 100%);
+    background-color: #ffffff;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     content: "";
     position: absolute;

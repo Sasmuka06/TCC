@@ -14,6 +14,7 @@
             margin-right: -50vw;
             margin-top: 40px;
             z-index: 1;
+            display: flex;
         }
 
        

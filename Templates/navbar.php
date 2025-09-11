@@ -1,25 +1,25 @@
 <style>
-  body, html {
+  body,
+  html {
     height: 100%;
     overflow: auto;
     margin: 0;
     height: 100vh;
     background:
       linear-gradient(120deg, #f0f0f0 10%, transparent 10%, transparent 30%, #f0f0f0 30%, #f0f0f0 50%, transparent 50%, transparent 70%, #f0f0f0 70%, #f0f0f0 90%, transparent 90%),
-      linear-gradient(120deg, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.03) 100%);
+      linear-gradient(120deg, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0.03) 100%);
     background-color: #ffffff;
     background-size: cover;
     background-repeat: no-repeat;
+    
   }
 
   .area-scroll {
     height: 500px;
     overflow-y: scroll;
     padding-right: 10px;
-    /* espaço para a barra de scroll */
   }
 
-  /* Personalizar a barra de scroll (webkit) */
   .area-scroll::-webkit-scrollbar {
     width: 8px;
   }
@@ -51,8 +51,6 @@
   .navbar,
   .sidebar {
     background-color: #3f4b6e;
-    /* Mesma cor exata */
-    /* ou use uma variável CSS */
     background-color: var(--primary-bg);
   }
 
@@ -114,9 +112,6 @@
     border-radius: 15px;
 
   }
-
-
-
 
   .navbar::after {
     content: '';

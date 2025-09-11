@@ -50,9 +50,11 @@ include "Templates/header.php"; ?>
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('IMG/text.jpg');
+    background:
+      linear-gradient(120deg, #f0f0f0 10%, transparent 10%, transparent 30%, #f0f0f0 30%, #f0f0f0 50%, transparent 50%, transparent 70%, #f0f0f0 70%, #f0f0f0 90%, transparent 90%),
+      linear-gradient(120deg, rgba(0, 0, 0, 0.19) 0%, rgba(0, 0, 0, 0.03) 100%);
+    background-color: #ffffff;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     content: "";
     position: absolute;
@@ -150,9 +152,32 @@ include "Templates/header.php"; ?>
 
   }
 
-  .wrapper h1 {
-    font-size: 42px;
+  .wrapper a {
     color: #638BBE;
+    transition: 0.3s;
+
+  }
+
+  .wrapper a:hover {
+    text-decoration: underline;
+    color: #2B3A67;
+  }
+
+  .wrapper h1 {
+    font-size: 52px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #2B3A67, #638BBE, #4ecdc4, #45b7d1, #96ceb4);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 8s ease-in-out infinite;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    align-items: center;
+
   }
 
   .input-box {
@@ -165,7 +190,7 @@ include "Templates/header.php"; ?>
 
   .input-box input {
     width: 100%;
-    
+
     background: transparent;
     border: none;
     outline: none;
@@ -207,14 +232,13 @@ include "Templates/header.php"; ?>
     font-weight: 600;
   }
 
-  .wrapper label{
-    color:black;
+  .wrapper label {
+    color: black;
   }
 
-  a:hover{
-        text-decoration: underline;
+  a:hover {
+    text-decoration: underline;
   }
-  
 </style>
 
 
@@ -254,7 +278,6 @@ include "Templates/header.php"; ?>
     </form>
   </div>
   <Br>
-
 
 </div>
 <div class="split right">
